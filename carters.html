@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+     header {
+      text-align: center; 
+      background-color: #f5f5f5; 
+      padding: 20px 20px; 
+    }
+
+    h1 {
+      margin: 0; 
+      font-size: 2em;
+    }
+
+    .slideshow-container {
+      padding-top: 2%;
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+  
+    .slides {
+      display: none;
+      width: 100%;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 16px;
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 3px;
+      user-select: none;
+    }
+    .next { right: 0; }
+    .prev { left: 0; }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Carter Sustainability Project</h1>
+       
+      </header>
+
+    <div class="slideshow-container">
+        <img class="slides" src="images/carters/slide0.png">
+        <img class="slides" src="images/carters/slide1.png">
+        <img class="slides" src="images/carters/slide2.png">
+        <img class="slides" src="images/carters/slide3.png">
+        <img class="slides" src="images/carters/slide4.png">
+        <img class="slides" src="images/carters/slide5.png">
+        <img class="slides" src="images/carters/slide6.png">
+        <img class="slides" src="images/carters/slide7.png">
+        <img class="slides" src="images/carters/slide8.png">
+        <img class="slides" src="images/carters/slide9.png">
+        <img class="slides" src="images/carters/slide10.png">
+        <img class="slides" src="images/carters/slide11.png">
+        <img class="slides" src="images/carters/slide12.png">
+        <img class="slides" src="images/carters/slide13.png">
+        <img class="slides" src="images/carters/slide14.png">
+        <img class="slides" src="images/carters/slide15.png">
+        <img class="slides" src="images/carters/slide16.png">
+        <img class="slides" src="images/carters/slide17.png">
+        <img class="slides" src="images/carters/slide18.png">    
+        <img class="slides" src="images/carters/slide19.png">
+        <img class="slides" src="images/carters/slide20.png">
+        <img class="slides" src="images/carters/slide21.png">
+        <img class="slides" src="images/carters/slide22.png">
+        <img class="slides" src="images/carters/slide23.png">
+        <img class="slides" src="images/carters/slide24.png">
+        <img class="slides" src="images/carters/slide25.png">
+        <img class="slides" src="images/carters/slide26.png">
+        <img class="slides" src="images/carters/slide27.png">
+        <img class="slides" src="images/carters/slide28.png">    
+        <img class="slides" src="images/carters/slide29.png">
+        <img class="slides" src="images/carters/slide30.png">
+        <img class="slides" src="images/carters/slide31.png">
+        <img class="slides" src="images/carters/slide32.png">    
+        <img class="slides" src="images/carters/slide33.png">
+        <img class="slides" src="images/carters/slide34.png">
+        <img class="slides" src="images/carters/Slide35.png">
+  
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+<script>
+    let slideIndex = 0;
+    showSlide(slideIndex);
+
+    function plusSlides(n) {
+    slideIndex += n;
+    showSlide(slideIndex);
+    }
+
+    function showSlide(n) {
+    let slides = document.getElementsByClassName("slides");
+    if (n >= slides.length) { slideIndex = 0 }
+    if (n < 0) { slideIndex = slides.length - 1 }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+    }
+</script>
+
+
+
+
+</body>
+</html>

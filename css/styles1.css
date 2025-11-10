@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+  }
+  
+  header {
+    background-color: #2d3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+  }
+  .project {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  .project-card-link:visited,
+  .project-card-link:hover,
+  .project-card-link:active {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #2d3e50;
+    text-align: center;
+  }
+  
+  .project-image {
+    width: 100%;
+    aspect-ratio: 3 / 2;  /* 👈 new: replaces fixed height */
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  
+  .project-description {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .tag {
+    background-color: #0057B7;
+    color: #fdfdfd;
+    text-shadow: 0.75px 0.5px 1px rgba(0, 0, 0, 0.5);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    border: 1px solid rgba(18, 17, 17, 0.6);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  

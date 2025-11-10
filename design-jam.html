@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    header {
+      text-align: center; 
+      background-color: #f5f5f5; 
+      padding: 20px 20px; 
+    }
+
+    h1 {
+      margin: 0; 
+      font-size: 2em;
+    }
+
+    .container {
+      padding-top: 2%;
+      position: relative;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .slides {
+      width: 100%;
+      display: block;
+    }
+
+    /* Grid for last 5 images */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    }
+
+    .grid-container img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;   
+    border-radius: 5px;
+    display: block;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Design Jam Competition</h1>
+  </header>
+
+  <div class="container">
+    <img class="slides" src="images/designjam/project_outline.png" alt="">
+  </div>  
+
+  <div class="container">
+    <img class="slides" src="images/designjam/IMG_1351.jpg" alt="">
+  </div> 
+
+  <div class="container">
+    <img class="slides" src="images/designjam/IMG_1331.JPG" alt="">
+  </div>  
+
+  <!-- Grid for last 5 images -->
+  <div class="grid-container">
+    <img src="images/designjam/1.png" alt="">
+    <img src="images/designjam/2.png" alt="">
+    <img src="images/designjam/3.png" alt="">
+    <img src="images/designjam/4.png" alt="">
+    <img src="images/designjam/5.png" alt="">
+    <img src="images/designjam/diploma.png" alt="">
+  </div>
+</body>
+</html>
